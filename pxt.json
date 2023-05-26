@@ -1,0 +1,40 @@
+{
+    "name": "s3link",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "pxt-s3link-udk": "github:jp-rad/pxt-s3link-udk#0.1.0",
+        "pxt-ubit-bladv": "github:jp-rad/pxt-ubit-bladv#0.1.1"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null,
+                    "dfu_service": 0,
+                    "partial_flashing": 0,
+                    "event_service": 0
+                }
+            }
+        }
+    }
+}
