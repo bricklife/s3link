@@ -18,9 +18,8 @@ let connected = 0
 connected = 0
 s3linkudk.startService()
 bladv.accumulateCompleteList16BitServiceID(61445)
-music.playTone(440, music.beat(BeatFraction.Eighth))
-music.rest(music.beat(BeatFraction.Eighth))
-music.playTone(440, music.beat(BeatFraction.Eighth))
+music.setVolume(50)
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.InBackground)
 while (connected == 0) {
     basic.showString(control.deviceName())
 }
