@@ -11,5 +11,6 @@ s3linkudk.startService()
 bladv.accumulateCompleteList16BitServiceID(61445)
 basic.showString(control.deviceName())
 basic.forever(function () {
-	
+    s3linkudk.setTilt(Rotation.Pitch, input.rotation(Rotation.Pitch))
+    s3linkudk.setTilt(Rotation.Roll, input.rotation(Rotation.Roll))
 })
